@@ -10,7 +10,7 @@ export default function Index() {
     >
       
       <View
-        style={{ flex: 6, backgroundColor: "lightblue", width: "100%" }}
+        style={{ flex: 6, width: "100%" }}
       >
         <Image
         source={require  ("../assets/images/babyPic.jpg")}
@@ -39,7 +39,7 @@ export default function Index() {
         <HomeCatList />
         </View>
       <View
-        style={{ flex: 2, backgroundColor: "red", width: "100%", flexDirection: "row", justifyContent: "space-between" }}
+        style={{ flex: 2, width: "100%", flexDirection: "row", justifyContent: "space-between" }}
       >
         <Text> Add new category button here </Text>
 

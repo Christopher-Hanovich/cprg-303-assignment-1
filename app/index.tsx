@@ -23,8 +23,8 @@ export default function Index() {
         <View
           style={{ flex: 1, backgroundColor: "#CA719D", marginRight: "20%" }}
         >
-          <Text> Name </Text>
-          <Text> Age </Text>
+          <Text style= {{color: "white", fontWeight: "bold"}}> Name </Text>
+          <Text style= {{color: "white"}}> Age </Text>
         </View>
         <View
           style={{ flex: 1, marginLeft: "20%", flexDirection: "row", justifyContent: "center" }}

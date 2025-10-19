@@ -41,6 +41,23 @@ export default function Index() {
           <View style={{ flex: 1, backgroundColor: "cyan"}}></View>
           <View style={{ flex: 1, backgroundColor: "navy" }}></View>
         </View>
+      <View
+        style={{ flex: 1, flexDirection: "row",backgroundColor: "#CA719D", width: "100%", justifyContent: "space-between" }}
+      >
+        <View
+          style={{ flex: 1, backgroundColor: "#CA719D", marginRight: "20%" }}
+        >
+          <Text style= {{color: "white", fontWeight: "bold"}}> Name </Text>
+          <Text style= {{color: "white"}}> Age </Text>
+        </View>
+        <View
+          style={{ flex: 1, marginLeft: "20%", flexDirection: "row", justifyContent: "center" }}
+        >
+          <View style={{ flex: 1, backgroundColor: "#CA719D"}}>
+          </View>
+          <View style={{ flex: 1, backgroundColor: "#CA719D" }}>
+          </View>
+          </View>
       </View>
 
       {/* Category List */}

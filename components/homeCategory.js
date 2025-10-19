@@ -104,6 +104,13 @@ export default function HomeCategory({ category }) {
       </View>
       <View style={Styles.textContainer}>
         <Text style={Styles.descText}>{desc}</Text>
+    <Pressable style={Styles.container}>
+      <View style={{ flex: 1, flexDirection: "row", alignItems: "left" }}>
+        <View style={{ flex: 1 }}>{icon}</View>
+        <View style={{ flex: 2, marginLeft: 10 }}>
+          <Text style={Styles.timeText}>{time}</Text>
+          <Text style={Styles.descText}>{desc}</Text>
+        </View>
       </View>
       <View style={Styles.clockContainer}>
         <MaterialCommunityIcons name="clock-outline" size={14} color="#8E8E93" />

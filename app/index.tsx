@@ -1,6 +1,6 @@
-import React from "react";
-import { Image, Text, View, TouchableOpacity, Alert } from "react-native";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import React from "react";
+import { Alert, Image, Text, TouchableOpacity, View } from "react-native";
 import AlertButton from "../components/alertButton";
 import HomeCatList from "../components/homeCatList";
 
@@ -20,27 +20,6 @@ export default function Index() {
       </View>
 
       {/* Info Bar */}
-      <View style={{ 
-        flex: 1, 
-        flexDirection: "row", 
-        backgroundColor: "lightpink", 
-        width: "100%", 
-        justifyContent: "space-between",
-        paddingHorizontal: 20,
-        alignItems: "center"
-      }}>
-        <View style={{ flex: 1 }}>
-          <Text style={{ fontSize: 16, fontWeight: "bold" }}>Name: Parker</Text>
-          <Text style={{ fontSize: 14 }}>Age: 1 month</Text>
-        </View>
-        <View style={{ 
-          flex: 1, 
-          flexDirection: "row", 
-          justifyContent: "center" 
-        }}>
-          <View style={{ flex: 1, backgroundColor: "cyan"}}></View>
-          <View style={{ flex: 1, backgroundColor: "navy" }}></View>
-        </View>
       <View
         style={{ flex: 1, flexDirection: "row",backgroundColor: "#CA719D", width: "100%", justifyContent: "space-between" }}
       >
@@ -57,7 +36,7 @@ export default function Index() {
           </View>
           <View style={{ flex: 1, backgroundColor: "#CA719D" }}>
           </View>
-          </View>
+        </View>
       </View>
 
       {/* Category List */}
@@ -72,27 +51,30 @@ export default function Index() {
         flexDirection: "row", 
         justifyContent: "center",
         alignItems: "center",
-        padding: 20
       }}>
         <TouchableOpacity 
           style={{
-            backgroundColor: "#007AFF",
-            paddingHorizontal: 20,
-            paddingVertical: 12,
-            borderRadius: 10,
-            flexDirection: "row",
+            width: "92%",
+            marginHorizontal: 16,
+            marginVertical: 8,
+            padding: 16,
+            backgroundColor: "white",
+            borderRadius: 12,
             alignItems: "center",
             shadowColor: "#000",
-            shadowOffset: { width: 0, height: 2 },
-            shadowOpacity: 0.2,
+            shadowOffset: {
+              width: 0,
+              height: 1,
+            },
+            shadowOpacity: 0.1,
             shadowRadius: 3,
-            elevation: 3,
+            elevation: 2,
           }}
           onPress={handleAddCategory}
         >
-          <MaterialCommunityIcons name="plus" size={20} color="white" />
+          <MaterialCommunityIcons name="plus" size={20} />
           <Text style={{ 
-            color: "white", 
+
             fontSize: 16, 
             fontWeight: "bold",
             marginLeft: 8 

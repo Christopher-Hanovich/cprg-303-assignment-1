@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function homeCategory({ category }) {
   const { icon, time, desc, color } = category;
@@ -17,7 +17,7 @@ export default function homeCategory({ category }) {
     descText: { fontSize: 14, color: "gray" },
   });
   return (
-    <View style={Styles.container}>
+    <Pressable style={Styles.container}>
       <View style={{ flex: 1, flexDirection: "row", alignItems: "left" }}>
         <View style={{ flex: 1 }}>{icon}</View>
         <View style={{ flex: 2, marginLeft: 10 }}>
@@ -32,6 +32,6 @@ export default function homeCategory({ category }) {
           Clock in here
         </Text>
       </View>
-    </View>
+    </Pressable>
   );
 }

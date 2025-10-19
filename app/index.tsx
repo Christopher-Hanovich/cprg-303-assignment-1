@@ -18,20 +18,20 @@ export default function Index() {
       />
       </View>
       <View
-        style={{ flex: 1, flexDirection: "row",backgroundColor: "lightpink", width: "100%", justifyContent: "space-between" }}
+        style={{ flex: 1, flexDirection: "row",backgroundColor: "#CA719D", width: "100%", justifyContent: "space-between" }}
       >
         <View
-          style={{ flex: 1, backgroundColor: "purple", marginRight: "20%" }}
+          style={{ flex: 1, backgroundColor: "#CA719D", marginRight: "20%" }}
         >
           <Text> Name </Text>
           <Text> Age </Text>
         </View>
         <View
-          style={{ flex: 1, backgroundColor: "blue", marginLeft: "20%", flexDirection: "row", justifyContent: "center" }}
+          style={{ flex: 1, marginLeft: "20%", flexDirection: "row", justifyContent: "center" }}
         >
-          <View style={{ flex: 1, backgroundColor: "cyan"}}>
+          <View style={{ flex: 1, backgroundColor: "#CA719D"}}>
           </View>
-          <View style={{ flex: 1, backgroundColor: "navy" }}>
+          <View style={{ flex: 1, backgroundColor: "#CA719D" }}>
           </View>
           </View>
       </View>

@@ -40,49 +40,49 @@ export default function Index() {
       </View>
 
       {/* Category List */}
-      <View style={{ flex: 8, width: "100%" }}>
+      <View style={{ flex: 10, width: "100%", justifyContent: "space-between" }}>
+        
         <HomeCatList />
-      </View>
-
-      {/* Add Category Button */}
-      <View style={{ 
-        flex: 2, 
-        width: "100%", 
-        flexDirection: "row", 
-        justifyContent: "center",
-        alignItems: "center",
-      }}>
-        <TouchableOpacity 
-          style={{
-            width: "92%",
-            marginHorizontal: 16,
-            marginVertical: 8,
-            padding: 16,
-            backgroundColor: "white",
-            borderRadius: 12,
-            alignItems: "center",
-            shadowColor: "#000",
-            shadowOffset: {
-              width: 0,
-              height: 1,
-            },
-            shadowOpacity: 0.1,
-            shadowRadius: 3,
-            elevation: 2,
-          }}
-          onPress={handleAddCategory}
-        >
-          <MaterialCommunityIcons name="plus" size={20} />
-          <Text style={{ 
-
-            fontSize: 16, 
-            fontWeight: "bold",
-            marginLeft: 8 
+        {/* Add Category Button */}
+        <View style={{ 
+           
+          width: "100%", 
+          flexDirection: "row", 
+          justifyContent: "center",
+          alignItems: "center",
           }}>
-            Add new category
-          </Text>
-        </TouchableOpacity>
+            <TouchableOpacity 
+            style={{
+                flex: 1,
+                width: "100%",
+                backgroundColor: "white",
+                borderRadius: 12,
+                alignItems: "center",
+                shadowColor: "#000",
+                shadowOffset: {
+                  width: 0,
+                  height: 1,
+                },
+                shadowOpacity: 0.1,
+                shadowRadius: 3,
+                elevation: 2,
+              }}
+              onPress={handleAddCategory}
+            >
+            <MaterialCommunityIcons name="plus" size={20} />
+            <Text style={{ 
+
+              fontSize: 16, 
+              fontWeight: "bold",
+              marginLeft: 8 
+            }}>
+              Add new category
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
+
+     
 
       {/* Alert Button */}
       <AlertButton title="Alert" message="Alert Button pressed." />

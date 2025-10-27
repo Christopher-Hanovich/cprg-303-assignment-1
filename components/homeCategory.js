@@ -41,9 +41,8 @@ export default function HomeCategory({ category }) {
   const Styles = StyleSheet.create({
     container: {
       flexDirection: "row",
-      marginHorizontal: 16,
-      marginVertical: 8,
-      padding: 16,
+      flex: 1,
+      width: "100%",
       backgroundColor: "white",
       borderRadius: 12,
       alignItems: "center",
